@@ -117,7 +117,7 @@ export default {
     }
     
     .footer_content {
-        @include wrapper_80;
+        @include wrapper_70;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;

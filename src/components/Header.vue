@@ -49,7 +49,8 @@ export default {
         font-family: 'Roboto', sans-serif;
         display: flex;
         align-items: center;
-        @include wrapper_80;
+        justify-content: space-between;
+        @include wrapper_70;
         height: 100px;
         img {
             height: 70px;
@@ -60,9 +61,9 @@ export default {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-grow: 1;
         list-style: none;
-
+        width: 60%;
+        
         li {
             display: inline-block;
             text-transform: uppercase;

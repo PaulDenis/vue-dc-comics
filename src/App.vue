@@ -10,6 +10,7 @@
 
     <footer>
       <FooterLinks/>
+      <Social/>
     </footer>
   </div>
 </template>
@@ -18,13 +19,15 @@
   import Header from './components/Header'
   import Content from './components/Content'
   import FooterLinks from './components/FooterLinks'
+  import Social from './components/Social'
 
   export default {
     name: 'App',
     components: {
       Header,
       Content,
-      FooterLinks
+      FooterLinks,
+      Social
 
   }
 }

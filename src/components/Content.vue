@@ -22,7 +22,7 @@ export default {
     }
 
     .content {
-        @include wrapper_80;
+        @include wrapper_70;
         padding: 50px;
         font-family: 'Roboto', sans-serif;
         color: white;
