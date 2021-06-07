@@ -9,7 +9,7 @@
     </main>
 
     <footer>
-      <footerLinks/>
+      <FooterLinks/>
     </footer>
   </div>
 </template>
@@ -31,7 +31,7 @@
 </script>
 
 <style lang="scss">
-body {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;

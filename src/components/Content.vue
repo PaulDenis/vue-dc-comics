@@ -23,7 +23,8 @@ export default {
 
     .content {
         @include wrapper_80;
+        padding: 50px;
+        font-family: 'Roboto', sans-serif;
         color: white;
-        padding: 25px;
     }
 </style>
