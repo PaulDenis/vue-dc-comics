@@ -1,8 +1,8 @@
 <template>
     <div id="header">
         <img src="../assets/img/dc-logo.png" alt="Dc Logo">
-        <ul class="inline_list">
-            <li>
+        <!--<ul class="inline_list">
+             <li>
                 <a href="#">Characters</a>
             </li>
             <li>
@@ -31,6 +31,15 @@
             </li>
             <li>
                 <a href="#">Shop</a>
+            </li> 
+        </ul>-->
+        <ul class="inline_list">
+            <li v-for="(link,index) in links" :key="index">
+                <a :href="link.url"
+                :class="{active: link.active}"
+                >
+                {{ link.text }}
+                </a>
             </li>
         </ul>
     </div>
@@ -38,8 +47,65 @@
 
 <script>
 export default {
-    name: 'Header'
+    name: 'Header',
+    data: function() {
+    return {
+        links:[
+            {
+                text: "characters",
+                url: "#characters",
+                active: false
+            },
+            {
+                text: "Comics",
+                url: "#Comics",
+                active: true
+            },
+            {
+                text: "Movies",
+                url: "#Movies",
+                active: false
+            },
+            {
+                text: "TV",
+                url: "#TV",
+                active: false
+            },
+            {
+                text: "Games",
+                url: "#Games",
+                active: false
+            },
+            {
+                text: "Collectibles",
+                url: "#Collectibles",
+                active: false
+            },
+            {
+                text: "Videos",
+                url: "#Videos",
+                active: false
+            },
+            {
+                text: "Fans",
+                url: "#Fans",
+                active: false
+            },
+            {
+                text: "News",
+                url: "#News",
+                active: false
+            },
+            {
+                text: "Shop",
+                url: "#Shop",
+                active: false
+            }
+        ]
+    }
 }
+}
+
 </script>
 
 <style lang="scss" scoped>
@@ -79,13 +145,13 @@ export default {
         &:hover {
             color: #0282f9;
             border-bottom: 5px solid #0282f9;
-            padding-bottom: 35px;
+            padding-bottom: 36px;
         };
     }
     .active {
         color: #0282f9;
         border-bottom: 5px solid #0282f9;
-        padding-bottom: 35px;
+        padding-bottom: 36px;
     }
 
 
